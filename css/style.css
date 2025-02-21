@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+input,
+button,
+textarea {
+  background-color: #fff;
+  border: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  color: #f00;
+  background-color: #433d3d;
+  font-family: "Roboto", serif;
+  font-size: 10rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.word {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.word__letter {
+  letter-spacing: 2rem;
+  animation: veronika 4s linear infinite;
+}
+
+@keyframes veronika {
+  0% {
+    transform: translateX(-5rem);
+    letter-spacing: 2rem;
+    opacity: 0;
+    color: #f00;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+    letter-spacing: -1.5rem;
+  }
+  100% {
+    transform: translateX(5rem);
+    letter-spacing: 2rem;
+    opacity: 0;
+    color: #00f;
+  }
+}
+.word__letter:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.word__letter:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.word__letter:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.word__letter:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.word__letter:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.word__letter:nth-child(6) {
+  animation-delay: 1.2s;
+}
+
+.word__letter:nth-child(7) {
+  animation-delay: 1.4s;
+}
+
+.word__letter:nth-child(8) {
+  animation-delay: 1.6s;
+}
